@@ -1,0 +1,31 @@
+proxies:
+- name: Herbal ID1
+  type: vmess
+  server: api.midtrans.com
+  port: 443
+  uuid: 8f746058-facc-4824-a181-9f55a99922ca
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: idc-1.herbalv2ray.me
+  network: ws
+  ws-opts:
+    path: "/herbalserver"
+    headers:
+      Host: idc-1.herbalv2ray.me
+#===================X===================#
+- name: Fastssh ID1
+  type: trojan
+  server: api.midtrans.com
+  port: 443
+  password: c4dba280-332c-11ed-b632-225401db9d57
+  udp: true
+  sni: id-ikd.tjvpn.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/fastssh"
+    headers:
+      Host: id-ikd.tjvpn.org
