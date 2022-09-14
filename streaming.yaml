@@ -1,0 +1,48 @@
+proxies:
+- name: Vmess WORLD
+  type: vmess
+  server: api.midtrans.com
+  port: 443
+  uuid: e40b9a2e-9590-4a11-af7e-1f840632ec82
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: sg1.worldssh.studio
+  network: ws
+  ws-opts:
+    path: "/worldssh@u=riekhu&p=a2e6dcb3c39441&"
+    headers:
+      Host: sg1.worldssh.studio
+#===================X===================#
+- name: Herbal SG
+  type: vmess
+  server: api.midtrans.com
+  port: 443
+  uuid: 1a7f31a9-d786-4e67-9326-32beb6b912df
+  alterId: 0
+  cipher: auto
+  udp: true
+  skip-cert-verify: true
+  tls: true
+  servername: sgdo-1.herbalv2ray.me
+  network: ws
+  ws-opts:
+    path: "/herbalserver"
+    headers:
+      Host: sgdo-1.herbalv2ray.me
+#===================X===================#
+- name: Fastssh ID1
+  type: trojan
+  server: api.midtrans.com
+  port: 443
+  password: c4dba280-332c-11ed-b632-225401db9d57
+  udp: true
+  sni: id-ikd.tjvpn.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: "/fastssh"
+    headers:
+      Host: id-ikd.tjvpn.org
